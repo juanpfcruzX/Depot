@@ -14,3 +14,16 @@ More Info:
                        bsilva 2011
 
 
+
+%- HOW TO RUN?  -%
+
+
+=> run the "bundle install" or "bundle update"
+
+=> rake db:create   # to create databases
+=> rake db:migrate  # to update databases and tables
+=> rake db:seed     # to add products in your store
+=> rails server     # finally! ...to running application
+
+Thanks! :)
+
