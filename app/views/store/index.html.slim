@@ -1,0 +1,21 @@
+span.notice= notice if notice
+
+h2 Your Pragmatic Catalog
+
+ul.catalog
+  - @products.each do |product|
+    li
+      = link_to product do
+        img src="#{product.image_url}" title="#{product.title}"
+
+      h3= link_to product.title, product
+      p = product.description.size > 199 ? truncate(product.description, :length => 400) : product.description
+      h3.price
+        = number_to_currency(product.price)
+        small= link_to "more detail...", product, :class => 'detail'
+        small= button_to "Add to cart", line_items_path(:product_id => product)
+
+= paginate @products
+
+ 
+

@@ -1,0 +1,14 @@
+h1= @product.title
+
+table.show
+  tr
+    td
+      img src="#{@product.image_url}" title="#{@product.title}"
+    td
+      h2.title Description:
+      p= @product.description
+
+      h2.price= number_to_currency(@product.price)
+      = button_to "Add to cart", line_items_path(:product_id => @product)
+
+= link_to 'Back to catalog', products_path

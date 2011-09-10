@@ -1,0 +1,17 @@
+h2 Your shopping Cart
+
+table border="1"
+  tr
+    th width="10%" Quantity
+    th Product
+    th Price
+  
+  = render @cart.line_items
+  
+  tr
+    td colspan="2"
+    td
+      h3= "Total: #{number_to_currency(@cart.total)}"
+
+br
+= button_to "Empty cart", @cart, :method => :delete, :confirm => "Are you sure?"

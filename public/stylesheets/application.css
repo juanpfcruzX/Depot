@@ -1,0 +1,84 @@
+
+body {
+  margin: 0; padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  background: url("/images/background.gif") repeat-x;
+}
+
+a       {color: #1C4BE8; text-decoration: none}
+a:hover {color: #1B7EE0; text-decoration: underline}
+
+
+#page {
+  width: 940px; margin: 0 auto;
+}
+
+#header {height: 135px}
+
+#header h1 {
+  font-size: 50px; padding: 0; margin: 20px 0;
+  color: #555; text-shadow: 0 -1px 0 #000;
+}
+
+#session { padding: 8px 0; color: white; text-shadow: 1px 1px 0 #000}
+
+#navigation {
+  width: 15%; display: inline-block;
+  padding: 15px 0;
+  vertical-align: top;
+}
+
+#navigation h3 {margin: 0}
+
+#navigation li {
+  padding: 5px 5px 5px 18px;
+  background: url('/images/bullet.gif') no-repeat center left;
+}
+
+#content {display: inline-block; width: 85%}
+
+.detail {
+  margin: 0 30px; padding-left: 16px;
+  background: url('/images/bullet.gif') no-repeat center left;
+}
+
+.add_to_cart {
+  margin: 0 30px; padding: 3px 3px 3px 22px;
+  background: url('/images/cart.png') no-repeat center left;
+}
+
+#cart {
+  background: #FFFCE0; padding: 10px;
+  margin: 15px 15px 0 0; border: 1px solid #FFC108;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+ul, li { padding:0; margin: 0 }
+li     { list-style: none }
+
+ul.catalog li        { border-top: 1px solid #f0f0f0; padding: 10px 0 }
+ul.catalog li h3     { margin: 10px 0}
+ul.catalog li img    { float: left; margin-right: 15px }
+.price { color: green }
+
+.pagination {padding: 6px 0}
+
+.pagination span {padding: 0 5px; font-weight: bold}
+.pagination span a {color: #555}
+.pagination span.page.current {color: #DA3900}
+
+
+table.show td {
+   padding: 15px; vertical-align: top
+}
+
+table.show td h2.title {margin: 0; color: #555}
+
